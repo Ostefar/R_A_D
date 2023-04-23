@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  seq:
+    image: datalust/seq
+    ports:
+      - 5341:5341
+      - 5342:80
+    environment:
+      - ACCEPT_EULA=Ycd
+
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - 9411:9411
+
+  rmq:
+    image: rabbitmq:management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=application
+      - RABBITMQ_DEFAULT_PASS=pepsi
+
+  game-master:
+    build:
+      context: .
+      dockerfile: GameMasterService/Dockerfile
+    image: boulundeasv/rps-game-master:${DEPLOY_NUMBER}
+    depends_on:
+      - seq
+      - zipkin
+      - rmq
+
+  copy-player:
+    build:
+      context: .
+      dockerfile: CopyPlayerService/Dockerfile
+    image: boulundeasv/rps-copy-player:${DEPLOY_NUMBER}
+    depends_on:
+      - seq
+      - zipkin
+      - rmq
+
+  random-player:
+    build:
+      context: .
+      dockerfile: RandomPlayerService/Dockerfile
+    image: boulundeasv/rps-random-player:${DEPLOY_NUMBER}
+    depends_on:
+      - seq
+      - zipkin
+      - rmq
