@@ -42,7 +42,7 @@ app.UseCors(config => config
     .AllowAnyMethod()
 );
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

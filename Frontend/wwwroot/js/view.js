@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     $.ajax({
-        url: "https://localhost:7111/User/ViewUsers",
+        url: "http://localhost:9000/User/ViewUsers",
         method: "GET",
         success: function (users) {
             $.each(users, function (index, user) {
