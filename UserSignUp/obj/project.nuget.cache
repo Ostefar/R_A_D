@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GRheGz/BUKBUubC+JzPR+HGJFprg5y3n+X/ra4QxOSsCS9hoM4GcuBXtj4xEo4Karvvy1NpEvp/VkVQkcEKnNg==",
+  "dgSpecHash": "xkiBKeVnqtdz73xxJAll/GmGru2Wfynhm5cxGkDwJGWtBOXQ0jMpufTJDJBdhCgWkiWJVeBcTL+L8EuG5GBlTA==",
   "success": true,
   "projectFilePath": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\R_A_D\\R_A_D\\UserSignUp\\UserSignUp.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,7 @@
     "C:\\Users\\emil_\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\emil_\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",

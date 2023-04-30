@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Frontend/1.0.0": {
+        "dependencies": {
+          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.17.2",
+          "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.6",
+          "knockoutjs": "3.5.1"
+        },
+        "runtime": {
+          "Frontend.dll": {}
+        }
+      },
+      "jQuery/1.8.0": {},
+      "knockoutjs/3.5.1": {},
+      "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+        "dependencies": {
+          "jQuery": "1.8.0"
+        }
+      },
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {}
+    }
+  },
+  "libraries": {
+    "Frontend/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "jQuery/1.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-laDFQRJrIRHT0Z0GVYklMt3bE0iu0MZFJwHwg21kt3SHb7Bj8TdNiM3K+ZdK1DzB8ZxKy8z7NkJvwMas+dmHBw==",
+      "path": "jquery/1.8.0",
+      "hashPath": "jquery.1.8.0.nupkg.sha512"
+    },
+    "knockoutjs/3.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5Acbwk98GvNEevZdAWANyKd3UZWXh0ULy+nlfF2K7Qe47oQbSsEVWD9K6wddXGPn/dmeVy67WnKi8H9Z+HpS1A==",
+      "path": "knockoutjs/3.5.1",
+      "hashPath": "knockoutjs.3.5.1.nupkg.sha512"
+    },
+    "Microsoft.jQuery.Unobtrusive.Ajax/3.2.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-udg7ZBszgqxloQ+ShJRONKQAzPnJIlUhKZB+AIvZdKh7CDc5Nms69T9X0hN5i+NqMmQE6njkzdCcEb16lPdJTw==",
+      "path": "microsoft.jquery.unobtrusive.ajax/3.2.6",
+      "hashPath": "microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5daNXm8Hb016oETmuHXiW8jclmRR9CzM7XrOh2htYhQ/7AAYtqntZ1MrZkh09+JTtdjYdGsy2XIMPe9cg83x5w==",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.2",
+      "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+    }
+  }
+}

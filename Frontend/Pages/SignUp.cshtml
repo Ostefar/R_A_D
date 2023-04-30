@@ -1,0 +1,67 @@
+﻿@page
+@model Frontend.Pages.SignUpModel
+@{
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+<script src="/js/signUp.js"></script>
+
+<div>
+    <form id="signup-form" onsubmit="return false;">
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-row">
+                <div class="p-2 col-md-2">
+                    <input id="FirstName" type="text" class="form-control" placeholder="First name">
+                </div>
+
+                <div class="p-2 col-md-2">
+                    <input id="LastName" type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+
+            <div class="d-flex flex-row">
+                <div class="p-2 col-md-2">
+                    <input id="Email" type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="p-2 col-md-2">
+                    <input id="Phone" type="number" class="form-control" placeholder="Phone">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="d-flex flex-row">
+                <div class="p-2 col-md-2">
+                    <input id="AddressLine1" type="text" class="form-control" placeholder="Address line 1">
+                </div>
+
+                <div class="p-2 col-md-2">
+                    <input id="AddressLine2" type="text" class="form-control" placeholder="Address line 2">
+                </div>
+            </div>
+
+            <div class="d-flex flex-row">
+                <div class="p-2 col-md-2">
+                    <input id="Country" type="text" class="form-control" placeholder="Country">
+                </div>
+
+                <div class="p-2 col-md-2">
+                    <input id="City" type="text" class="form-control" placeholder="City">
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="p-2 col-md-2">
+                    <input id="ZipCode" type="text" class="form-control" placeholder="Zip code">
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <div class="d-flex flex-row">
+            <div class="p-2 col-md-2">
+                <button id="signup-btn" type="button" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+
