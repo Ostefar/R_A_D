@@ -1,17 +1,44 @@
 version: "3.9"
 
 services:
+seq:
+    image: datalust/seq
+    ports:
+      - 5341:5341
+      - 5342:80
+    environment:
+      - ACCEPT_EULA=Ycd
+
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - 9411:9411
+
+  rmq:
+    image: rabbitmq:management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=application
+      - RABBITMQ_DEFAULT_PASS=pepsi
+
   api:
     build:
       context: .
       dockerfile: "UserSignUp/Dockerfile"
-    ports:
-      - 9000:80
-
+    image: emilwitt/r_a_d-apihub:${DEPLOY_NUMBER}
+    depends_on:
+      - seq
+      - zipkin
+      - rmq
   web:
     build:
       context: .
-      dockerfile: "Frontend/Dockerfile"
-    ports:
-      - 9001:80
+      dockerfile: "Frontend/Dockerfile"    
+    image: emilwitt/r_a_d-webhub:${DEPLOY_NUMBER}
+    depends_on:
+      - seq
+      - zipkin
+      - rmq
 
