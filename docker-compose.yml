@@ -28,6 +28,8 @@ seq:
       context: .
       dockerfile: "UserSignUp/Dockerfile"
     image: emilwitt/r_a_d-apihub:${DEPLOY_NUMBER}
+      ports:
+      - 8050:80 
     depends_on:
       - seq
       - zipkin
@@ -37,6 +39,8 @@ seq:
       context: .
       dockerfile: "Frontend/Dockerfile"    
     image: emilwitt/r_a_d-webhub:${DEPLOY_NUMBER}
+    ports:
+      - 8040:80 
     depends_on:
       - seq
       - zipkin
