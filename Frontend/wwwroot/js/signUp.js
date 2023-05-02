@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const xhr = new XMLHttpRequest();
 
         // Set up the request parameters
-        xhr.open("POST", "http://localhost:9000/User/CreateUser", true);
+        xhr.open("POST", "http://localhost:8050/User/CreateUser", true);
         xhr.setRequestHeader("Content-Type", "application/json");
 
         // Add an event listener to handle the response

@@ -1598,24 +1598,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emil_\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\emil_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\projekter\\R_A_D\\UserSignUp\\UserSignUp.csproj",
+      "projectUniqueName": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\R_A_D\\R_A_D\\UserSignUp\\UserSignUp.csproj",
       "projectName": "UserSignUp",
-      "projectPath": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\projekter\\R_A_D\\UserSignUp\\UserSignUp.csproj",
+      "projectPath": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\R_A_D\\R_A_D\\UserSignUp\\UserSignUp.csproj",
       "packagesPath": "C:\\Users\\emil_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\projekter\\R_A_D\\UserSignUp\\obj\\",
+      "outputPath": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\R_A_D\\R_A_D\\UserSignUp\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\emil_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1623,7 +1618,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1682,7 +1676,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

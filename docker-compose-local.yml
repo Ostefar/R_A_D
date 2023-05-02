@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  seq:
+    image: datalust/seq
+    ports:
+      - 5341:5341
+      - 5342:80
+    environment:
+      - ACCEPT_EULA=Y
+  api:
+    build:
+      context: .
+      dockerfile: "UserSignUp/Dockerfile"
+    ports:
+      - 8050:80
+  web:
+    build:
+      context: .
+      dockerfile: "Frontend/Dockerfile"    
+    ports:
+      - 8040:80
