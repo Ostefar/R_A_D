@@ -8,10 +8,6 @@ services:
     image: emilwitt/r_a_d-apihub:${DEPLOY_NUMBER}
       ports:
       - 8050:80 
-    depends_on:
-      - seq
-      - zipkin
-      - rmq
   web:
     build:
       context: .
@@ -19,8 +15,4 @@ services:
     image: emilwitt/r_a_d-webhub:${DEPLOY_NUMBER}
     ports:
       - 8040:80 
-    depends_on:
-      - seq
-      - zipkin
-      - rmq
 
