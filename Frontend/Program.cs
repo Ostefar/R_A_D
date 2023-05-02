@@ -42,7 +42,7 @@ app.UseExceptionHandler(errorApp =>
     errorApp.Run(async context =>
     {
         var ex = context.Features.Get<IExceptionHandlerFeature>().Error;
-        Log.Error(ex, "Unhandled exception occurred during request processing");
+        await Task.Run(() =>  Log.Error(ex, "Unhandled exception occurred during request processing"));
     });
 });
 
