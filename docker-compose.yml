@@ -7,7 +7,7 @@ services:
       - 5341:5341
       - 5342:80
     environment:
-      - ACCEPT_EULA=Ycd
+      - ACCEPT_EULA=Yes
   api:
     build:
       context: .
@@ -15,10 +15,14 @@ services:
     image: emilwitt/r_a_d-apihub:${DEPLOY_NUMBER}
     ports:
       - 8050:80 
+      depends_on:
+      - seq
   web:
     build:
       context: .
       dockerfile: "Frontend/Dockerfile"    
     image: emilwitt/r_a_d-webhub:${DEPLOY_NUMBER}
     ports:
-      - 8040:80 
+      - 8040:80
+      depends_on:
+      - seq 
