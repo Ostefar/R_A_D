@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0aeJiAdI1tpTyQ0ZUjlaM5gd6ioybt7K52Rala12vs4Xie8hId15Kv50BIUaTayJ5IRhHIGoep0b/T0igbTiAw==",
+  "dgSpecHash": "tWJlaeESVgalr43OP5lSAORYNbOCUZ349gpbT2BPYhzSg8ymHvpoh0DhyeLuBSWmQLuzQp1rAAUuPx9z8id17Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\R_A_D\\R_A_D\\Frontend\\Frontend.csproj",
   "expectedPackageFiles": [
@@ -27,7 +27,7 @@
     "C:\\Users\\emil_\\.nuget\\packages\\serilog.extensions.logging\\3.1.0\\serilog.extensions.logging.3.1.0.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\serilog.formatting.compact\\1.1.0\\serilog.formatting.compact.1.1.0.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\serilog.settings.configuration\\3.3.0\\serilog.settings.configuration.3.3.0.nupkg.sha512",
-    "C:\\Users\\emil_\\.nuget\\packages\\serilog.sinks.console\\4.0.1\\serilog.sinks.console.4.0.1.nupkg.sha512",
+    "C:\\Users\\emil_\\.nuget\\packages\\serilog.sinks.console\\4.1.0\\serilog.sinks.console.4.1.0.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\serilog.sinks.periodicbatching\\3.1.0\\serilog.sinks.periodicbatching.3.1.0.nupkg.sha512",

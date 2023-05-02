@@ -6,17 +6,35 @@ services:
     ports:
       - 5341:5341
       - 5342:80
+    volumes:
+      - r_a_d_seq_data:/data
     environment:
       - ACCEPT_EULA=Y
+    networks:
+      - my-network
   api:
     build:
       context: .
       dockerfile: "UserSignUp/Dockerfile"
     ports:
-      - 8050:80
+      - 9000:80
+    depends_on:
+      - seq
+    networks:
+      - my-network
   web:
     build:
       context: .
       dockerfile: "Frontend/Dockerfile"    
     ports:
-      - 8040:80
+      - 9001:80
+    depends_on:
+      - seq
+    networks:
+      - my-network
+
+volumes:
+  r_a_d_seq_data:
+
+networks:
+  my-network:

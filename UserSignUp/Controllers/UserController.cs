@@ -1,7 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
+using Monitorings;
 using UserSignUp.Data;
 using UserSignUp.Models;
 
@@ -23,6 +22,7 @@ namespace UserSignUp.Controllers
         [Route("CreateUser")]
         public async Task<IActionResult> Post(User payload)
         {
+            MonitorService.Log.Information("Entered post method for user creation");
             if (payload is not null)
             {
                 User userData = new User()
@@ -40,10 +40,12 @@ namespace UserSignUp.Controllers
 
                 _dbContext.Users.Add(userData);
                 await _dbContext.SaveChangesAsync();
+                MonitorService.Log.Information("New user created");
                 return Ok(payload);
             }
             else
             {
+                MonitorService.Log.Information("Could not create new user");
                 return BadRequest(payload);
             }
         }
@@ -52,7 +54,6 @@ namespace UserSignUp.Controllers
         [Route("ViewUsers")]
         public async Task<IActionResult> GetAll()
         {
-
             var result = await(from user in _dbContext.Users
                           select new
                           {
@@ -69,6 +70,7 @@ namespace UserSignUp.Controllers
 
                           }).ToListAsync();
 
+            MonitorService.Log.Error("Entered get method for user view");
             return Ok(result);
         }
     }

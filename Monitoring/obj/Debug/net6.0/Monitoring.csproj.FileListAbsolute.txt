@@ -1,0 +1,5 @@
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Monitoring\obj\Debug\net6.0\Monitoring.csproj.AssemblyReference.cache
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Monitoring\obj\Debug\net6.0\Monitoring.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Monitoring\obj\Debug\net6.0\Monitoring.AssemblyInfoInputs.cache
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Monitoring\obj\Debug\net6.0\Monitoring.AssemblyInfo.cs
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Monitoring\obj\Debug\net6.0\Monitoring.csproj.CoreCompileInputs.cache

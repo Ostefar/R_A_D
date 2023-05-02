@@ -20,7 +20,7 @@ builder.Services.AddTransient<IDbInitializer, DbInitializer>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Create a Serilog logger configuration that writes to Seq
+/*// Create a Serilog logger configuration that writes to Seq
 var seqServerUrl = Environment.GetEnvironmentVariable("SEQ_SERVER_URL") ?? "http://localhost:5341";
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
@@ -29,6 +29,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Seq(seqServerUrl)
     .CreateLogger();
 builder.Host.UseSerilog();
+*/
 
 var app = builder.Build();
 
@@ -60,14 +61,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-// Log any unhandled exceptions that occur during request processing
-app.UseExceptionHandler(errorApp =>
-{
-    errorApp.Run(async context =>
-    {
-        var ex = context.Features.Get<IExceptionHandlerFeature>().Error;
-        await Task.Run(() => Log.Error(ex, "Unhandled exception occurred during request processing"));
-    });
-});
+Log.CloseAndFlush();
 
 app.Run();

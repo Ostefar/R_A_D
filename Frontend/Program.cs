@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
-// Create a Serilog logger configuration that writes to Seq
+/*// Create a Serilog logger configuration that writes to Seq
 var seqServerUrl = Environment.GetEnvironmentVariable("SEQ_SERVER_URL") ?? "http://localhost:5341";
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
@@ -15,7 +15,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .WriteTo.Seq(seqServerUrl)
     .CreateLogger();
-builder.Host.UseSerilog();
+builder.Host.UseSerilog();*/
 
 var app = builder.Build();
 
@@ -36,7 +36,7 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
-// Log any unhandled exceptions that occur during request processing
+/*// Log any unhandled exceptions that occur during request processing
 app.UseExceptionHandler(errorApp =>
 {
     errorApp.Run(async context =>
@@ -44,7 +44,9 @@ app.UseExceptionHandler(errorApp =>
         var ex = context.Features.Get<IExceptionHandlerFeature>().Error;
         await Task.Run(() =>  Log.Error(ex, "Unhandled exception occurred during request processing"));
     });
-});
+});*/
+
+Log.CloseAndFlush();
 
 
 app.Run();

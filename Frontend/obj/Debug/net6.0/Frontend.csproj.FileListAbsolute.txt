@@ -73,3 +73,16 @@ C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_lar
 C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\projekter\R_A_D\Frontend\obj\Debug\net6.0\Frontend.pdb
 C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\projekter\R_A_D\Frontend\obj\Debug\net6.0\Frontend.genruntimeconfig.cache
 C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\projekter\R_A_D\Frontend\obj\Debug\net6.0\ref\Frontend.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
+C:\Users\emil_\OneDrive\Dokumenter\Skole\Software-development\development_of_large_systems\R_A_D\R_A_D\Frontend\obj\Debug\net6.0\Frontend.csproj.CopyComplete
