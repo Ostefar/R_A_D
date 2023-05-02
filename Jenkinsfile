@@ -23,7 +23,15 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                build job: 'r_a_d-deploy', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER}"]]
+                script {
+                    try {
+                        build job: 'r_a_d-deploy', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER}"]]
+                    } catch (err) {
+                        currentBuild.result = "FAILURE"
+                        sh "echo Rollback to the last successful build"
+                        build job: 'r_a_d-deploy', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER-1}"]]
+                    }
+                }
             }
         }
     }
