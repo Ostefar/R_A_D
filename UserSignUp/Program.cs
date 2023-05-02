@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<SqlDbContext>(options => options.UseInMemoryDatabase("UserDatabaseInMemory"));
-
+hello
 builder.Services.AddScoped<IRepo<User>, UserRepo>();
 builder.Services.AddTransient<IDbInitializer, DbInitializer>();
 

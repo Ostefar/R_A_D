@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xkiBKeVnqtdz73xxJAll/GmGru2Wfynhm5cxGkDwJGWtBOXQ0jMpufTJDJBdhCgWkiWJVeBcTL+L8EuG5GBlTA==",
+  "dgSpecHash": "z/oRJqL9q2MaqkC5ETO00GNXqG5QWp9JJiTf+z7tc4SrsP1eUZXQE5JbfrasNbgOQEcKa8AyWuvA23vYKeOvFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\R_A_D\\R_A_D\\UserSignUp\\UserSignUp.csproj",
+  "projectFilePath": "C:\\Users\\emil_\\OneDrive\\Dokumenter\\Skole\\Software-development\\development_of_large_systems\\projekter\\R_A_D\\UserSignUp\\UserSignUp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emil_\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.16\\microsoft.entityframeworkcore.6.0.16.nupkg.sha512",
     "C:\\Users\\emil_\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.16\\microsoft.entityframeworkcore.abstractions.6.0.16.nupkg.sha512",
