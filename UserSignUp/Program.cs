@@ -1,8 +1,11 @@
 using Microsoft.EntityFrameworkCore;
+using Serilog.Events;
+using Serilog;
 using UserSignUp.Data;
 using UserSignUp.Interfaces;
 using UserSignUp.Models;
 using UserSignUp.Repositories;
+using Microsoft.AspNetCore.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,13 +13,22 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<SqlDbContext>(options => options.UseInMemoryDatabase("UserDatabaseInMemory"));
-hello
 builder.Services.AddScoped<IRepo<User>, UserRepo>();
 builder.Services.AddTransient<IDbInitializer, DbInitializer>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Create a Serilog logger configuration that writes to Seq
+var seqServerUrl = Environment.GetEnvironmentVariable("SEQ_SERVER_URL") ?? "http://localhost:5341";
+Log.Logger = new LoggerConfiguration()
+    .Enrich.FromLogContext()
+    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+    .WriteTo.Console()
+    .WriteTo.Seq(seqServerUrl)
+    .CreateLogger();
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 
@@ -47,5 +59,15 @@ app.UseCors(config => config
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Log any unhandled exceptions that occur during request processing
+app.UseExceptionHandler(errorApp =>
+{
+    errorApp.Run(async context =>
+    {
+        var ex = context.Features.Get<IExceptionHandlerFeature>().Error;
+        Log.Error(ex, "Unhandled exception occurred during request processing");
+    });
+});
 
 app.Run();

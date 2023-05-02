@@ -53,6 +53,14 @@
               "target": "Package",
               "version": "[3.2.6, )"
             },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            },
             "knockoutjs": {
               "target": "Package",
               "version": "[3.5.1, )"
