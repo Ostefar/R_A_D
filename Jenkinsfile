@@ -13,10 +13,9 @@ pipeline {
                     sh "dotnet build"
                     sh "docker compose build"
                 } catch (err) {
-                    currentBuild.result = "FAILURE"
                     sh "echo Rollback to the last successful build"
                     build job: 'r_a_d-deploy', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER-1}"]]
-                    error(err)
+                    error "Build Failed"
                 }
             }
         }
@@ -28,10 +27,9 @@ pipeline {
                         sh "docker compose push"
                     }
                 } catch (err) {
-                    currentBuild.result = "FAILURE"
                     sh "echo Rollback to the last successful build"
                     build job: 'r_a_d-deploy', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER-1}"]]
-                    error(err)
+                    error "Deliver Failed"
                 }
             }
         }
@@ -40,10 +38,9 @@ pipeline {
                 try {
                     build job: 'r_a_d-deploy', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER}"]]
                 } catch (err) {
-                    currentBuild.result = "FAILURE"
                     sh "echo Rollback to the last successful build"
                     build job: 'r_a_d-deploy', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER-1}"]]
-                    error(err)
+                    error "Deploy Failed"
                 }
             }
         }
