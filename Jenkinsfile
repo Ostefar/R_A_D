@@ -23,7 +23,7 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                build job: 'r_a_d-Deploy', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER}"]]
+                build job: 'r_a_d', parameters: [[$class: 'StringParameterValue', name: 'DEPLOY_NUMBER', value: "${BUILD_NUMBER}"]]
             }
         }
     }
